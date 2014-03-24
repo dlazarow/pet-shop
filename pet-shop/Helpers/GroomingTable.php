@@ -4,7 +4,7 @@
 	{
 		try
 		{
-			$connect = odbc_connect("pet_shop","","");
+			$connect = odbc_connect("pet_shop","groomer","Admin01");
 			$sql = "SELECT * FROM grooming";
 				
 			$rs = odbc_exec($connect,$sql);

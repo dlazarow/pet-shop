@@ -88,9 +88,10 @@ var adminConfig = {
 		xmlhttp.open("POST","Controller.php?req=Login",true);
 		xmlhttp.onreadystatechange = function() {
 			if (xmlhttp.readyState==4 && xmlhttp.status==200) {
-				results(xmlhttp);	
-			}
+				results(xmlhttp);					
+			} 
 		}
+		
 		xmlhttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded;");
 		xmlhttp.send(params);
 	
